@@ -1,0 +1,4 @@
+DEBUG=True  # True или False
+SECRET_KEY="django-insecure-0if40nf4nf93n4"
+ALLOWED_HOSTS="*"
+PSQL_URL="postgres://riko:qwerty@localhost:5432/db_test"

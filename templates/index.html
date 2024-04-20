@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Main page
+{% endblock %}
+
+{% block content %}
+    <h2>This is my custom content</h2>
+    <p>Test contenct</p>
+    <a href="{% url 'register' %}"><button>Registration</button></a>
+    <a href="{% url 'perfomers' %}"><button>Perfomers</button></a>
+    <a href="{% url 'customers' %}"><button>Customers</button></a>
+{% endblock %}

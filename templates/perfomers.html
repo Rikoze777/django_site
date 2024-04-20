@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Perfomers
+{% endblock %}
+
+{% block content %}
+    <h2>List of perfomers</h2>
+    {% for perfomer in data %}
+        <p>Name: {{ perfomer.name }}</p>
+        <p>Address: {{ perfomer.experience }}</p>
+        <p>Phone: {{ perfomer.phonenumber }}</p>
+        <p>Experience: {{ perfomer.experience }}</p>
+        <br> 
+    {% empty %}
+        <p>No data available</p>
+    {% endfor %}
+{% endblock %}
